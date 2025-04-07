@@ -27,7 +27,7 @@ int checarpalavra(string coronho, string letra, string& palavramisterio){
     }
      return 0;
 }
-string checarpalavra2(string coronho, string letra, string& palavramisterio, string exc){
+string checarpalavra2(string coronho, string letra, string& palavramisterio, string& exc){
     for(int i = 0; i<5; i++){
         if(coronho[i] == letra[i]){
             palavramisterio[i] = coronho[i];
@@ -78,7 +78,7 @@ int main() {
         continue;
        }
        if(vidas == 0){
-           cout << "PERDEU! ZEBRA";
+           cout << "PERDEU!"<< palavra;
        }
     }
 
